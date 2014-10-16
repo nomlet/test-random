@@ -4,6 +4,6 @@
 my_randoms <- function() {
   x <- rnorm(100)
   m <- mean(x)
-  perc <- quantile(x,c(0.25,0.75))
+  perc <- quantile(x,c(0.25,0.50,0.75))
   list("Mean" = m, "Percentile" = perc)
 }
